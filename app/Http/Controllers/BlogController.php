@@ -42,10 +42,10 @@ class BlogController extends Controller
     {
         //dd($request);
         //Method 1
-        $blog =  new Blog();
+        /*$blog =  new Blog();
         $blog->title = $request->get('title');
         $blog->body = $request->get('body');
-        $blog->save();
+        $blog->save();*/
 
         //Method 2 - Mass assignable
        //$blog = Blog::create($request->only('title', 'body'));
