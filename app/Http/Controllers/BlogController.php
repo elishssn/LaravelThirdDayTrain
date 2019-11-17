@@ -16,7 +16,7 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $blogs = Blog::paginate(1);
+        $blogs = Blog::paginate(3);
         //dd($blogs);
         // dalam folder index.blade.php    
         return view('blogs.index')->with(compact('blogs'));
